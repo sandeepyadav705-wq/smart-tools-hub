@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sandeepyadav705-wq.github.io/smart-tools-hub/sitemap.xml
