@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percentage Calculator - Smart Tools Hub</title>
+    <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+
+    <header>
+        <a href="../../index.html" class="logo">Smart Tools Hub</a>
+        <nav class="nav-links">
+            <a href="../../index.html">Home</a>
+            <a href="../../index.html#tools">All Tools</a>
+            <a href="../../pages/about.html">About</a>
+            <a href="../../pages/contact.html">Contact</a>
+        </nav>
+        <button class="btn btn-outline" id="themeToggle" type="button">🌙 Dark Mode</button>
+    </header>
+
+    <main class="tool-container">
+        <h1>Percentage Calculator</h1>
+        <p>Calculate percentages quickly and easily.</p>
+
+        <label for="percentage">Enter Percentage (%)</label>
+        <input type="number" id="percentage" placeholder="Example: 20">
+
+        <label for="number">Enter Number</label>
+        <input type="number" id="number" placeholder="Example: 500">
+
+        <button class="btn" id="calculateBtn" type="button">
+            Calculate Percentage
+        </button>
+
+        <div class="result-box">
+            <h3>Result</h3>
+            <p id="result">Your result will appear here.</p>
+        </div>
+
+        <button class="btn btn-outline" id="clearBtn" type="button">
+            Clear All
+        </button>
+
+        <p id="message" aria-live="polite"></p>
+        <a href="../../index.html">← Back to Home</a>
+    </main>
+
+    <footer>
+        <h2>Smart Tools Hub</h2>
+        <p>Free and simple online tools for everyone.</p>
+        <div class="footer-links">
+            <a href="../../pages/about.html">About</a>
+            <a href="../../pages/contact.html">Contact</a>
+            <a href="../../pages/privacy.html">Privacy Policy</a>
+            <a href="../../pages/terms.html">Terms</a>
+        </div>
+        <p>© <span id="currentYear"></span> Smart Tools Hub. All rights reserved.</p>
+    </footer>
+
+    <script src="../../assets/js/common.js"></script>
+    <script src="percentage-calculator.js"></script>
+</body>
+</html>

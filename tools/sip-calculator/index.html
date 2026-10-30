@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIP Calculator - Smart Tools Hub</title>
+    <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+
+    <header>
+        <a href="../../index.html" class="logo">Smart Tools Hub</a>
+        <nav class="nav-links">
+            <a href="../../index.html">Home</a>
+            <a href="../../index.html#tools">All Tools</a>
+            <a href="../../pages/about.html">About</a>
+            <a href="../../pages/contact.html">Contact</a>
+        </nav>
+        <button class="btn btn-outline" id="themeToggle" type="button">🌙 Dark Mode</button>
+    </header>
+
+    <main class="tool-container">
+        <h1>SIP Calculator</h1>
+        <p>Estimate the future value of your monthly investments.</p>
+
+        <label for="monthlyInvestment">Monthly Investment (₹)</label>
+        <input type="number" id="monthlyInvestment" placeholder="Example: 2000" min="0">
+
+        <label for="expectedReturn">Expected Annual Return (%)</label>
+        <input type="number" id="expectedReturn" placeholder="Example: 12" min="0" step="any">
+
+        <label for="investmentYears">Investment Duration (Years)</label>
+        <input type="number" id="investmentYears" placeholder="Example: 10" min="0" step="any">
+
+        <button class="btn" id="calculateBtn" type="button">
+            Calculate SIP
+        </button>
+
+        <div class="result-box">
+            <h3>Estimated Results</h3>
+            <p id="investedAmount">Total Invested: ₹0.00</p>
+            <p id="estimatedReturns">Estimated Returns: ₹0.00</p>
+            <p id="totalValue">Total Value: ₹0.00</p>
+        </div>
+
+        <button class="btn btn-outline" id="clearBtn" type="button">
+            Clear All
+        </button>
+
+        <p id="message" aria-live="polite"></p>
+
+        <small>Returns are estimates, not guaranteed. Actual investment returns may vary.</small>
+        <br><br>
+        <a href="../../index.html">← Back to Home</a>
+    </main>
+
+    <footer>
+        <h2>Smart Tools Hub</h2>
+        <p>Free and simple online tools for everyone.</p>
+        <div class="footer-links">
+            <a href="../../pages/about.html">About</a>
+            <a href="../../pages/contact.html">Contact</a>
+            <a href="../../pages/privacy.html">Privacy Policy</a>
+            <a href="../../pages/terms.html">Terms</a>
+        </div>
+        <p>© <span id="currentYear"></span> Smart Tools Hub. All rights reserved.</p>
+    </footer>
+
+    <script src="../../assets/js/common.js"></script>
+    <script src="sip-calculator.js"></script>
+</body>
+</html>

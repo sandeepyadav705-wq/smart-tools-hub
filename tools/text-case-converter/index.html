@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Text Case Converter - Smart Tools Hub</title>
+
+    <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="../../index.html" class="logo">Smart Tools Hub</a>
+
+        <nav class="nav-links">
+            <a href="../../index.html">Home</a>
+            <a href="../../index.html#tools">All Tools</a>
+            <a href="../../pages/about.html">About</a>
+            <a href="../../pages/contact.html">Contact</a>
+        </nav>
+
+        <button class="btn btn-outline" id="themeToggle" type="button">
+            🌙 Dark Mode
+        </button>
+    </header>
+
+    <main class="tool-container">
+
+        <h1>Text Case Converter</h1>
+
+        <p>Convert your text into different letter cases instantly.</p>
+
+        <label for="inputText"><strong>Enter Your Text</strong></label>
+
+        <textarea
+            id="inputText"
+            placeholder="Type or paste your text here..."
+        ></textarea>
+
+        <div class="converter-buttons">
+            <button class="btn" id="upperBtn" type="button">
+                UPPERCASE
+            </button>
+
+            <button class="btn" id="lowerBtn" type="button">
+                lowercase
+            </button>
+
+            <button class="btn" id="titleBtn" type="button">
+                Title Case
+            </button>
+
+            <button class="btn" id="sentenceBtn" type="button">
+                Sentence Case
+            </button>
+        </div>
+
+        <h2>Converted Text</h2>
+
+        <textarea
+            id="outputText"
+            placeholder="Your converted text will appear here..."
+            readonly
+        ></textarea>
+
+        <div class="converter-buttons">
+            <button class="btn" id="copyBtn" type="button">
+                Copy Text
+            </button>
+
+            <button class="btn btn-outline" id="clearBtn" type="button">
+                Clear All
+            </button>
+        </div>
+
+        <p id="message" aria-live="polite"></p>
+
+        <a href="../../index.html">← Back to Home</a>
+
+    </main>
+
+    <footer>
+        <h2>Smart Tools Hub</h2>
+        <p>Free and simple online tools for everyone.</p>
+
+        <div class="footer-links">
+            <a href="../../pages/about.html">About</a>
+            <a href="../../pages/contact.html">Contact</a>
+            <a href="../../pages/privacy.html">Privacy Policy</a>
+            <a href="../../pages/terms.html">Terms</a>
+        </div>
+
+        <p>© <span id="currentYear"></span> Smart Tools Hub. All rights reserved.</p>
+    </footer>
+
+    <script src="../../assets/js/common.js"></script>
+    <script src="text-case-converter.js"></script>
+
+</body>
+</html>

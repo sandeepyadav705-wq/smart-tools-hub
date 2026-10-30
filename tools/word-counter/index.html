@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Word Counter - Smart Tools Hub</title>
+    <meta name="description" content="Count words, characters, sentences and paragraphs with this free online word counter.">
+
+    <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="../../index.html" class="logo">Smart Tools Hub</a>
+
+        <nav class="nav-links">
+            <a href="../../index.html">Home</a>
+            <a href="../../index.html#tools">All Tools</a>
+            <a href="../../pages/about.html">About</a>
+            <a href="../../pages/contact.html">Contact</a>
+        </nav>
+
+        <button class="btn btn-outline" id="themeToggle" type="button">
+            🌙 Dark Mode
+        </button>
+    </header>
+
+    <main class="tool-container">
+
+        <h1>Word Counter</h1>
+
+        <p>Count words, characters, sentences and paragraphs instantly.</p>
+
+        <label for="textInput"><strong>Enter Your Text</strong></label>
+
+        <textarea
+            id="textInput"
+            placeholder="Type or paste your text here..."
+        ></textarea>
+
+        <div class="stats">
+
+            <p>
+                Words
+                <span id="wordCount">0</span>
+            </p>
+
+            <p>
+                Characters
+                <span id="charCount">0</span>
+            </p>
+
+            <p>
+                Sentences
+                <span id="sentenceCount">0</span>
+            </p>
+
+            <p>
+                Paragraphs
+                <span id="paragraphCount">0</span>
+            </p>
+
+        </div>
+
+        <div class="converter-buttons">
+            <button class="btn" id="copyText" type="button">
+                Copy Text
+            </button>
+
+            <button class="btn btn-outline" id="clearText" type="button">
+                Clear All
+            </button>
+        </div>
+
+        <p id="message" aria-live="polite"></p>
+
+        <a href="../../index.html">← Back to Home</a>
+
+    </main>
+
+    <footer>
+        <h2>Smart Tools Hub</h2>
+        <p>Free and simple online tools for everyone.</p>
+
+        <div class="footer-links">
+            <a href="../../pages/about.html">About</a>
+            <a href="../../pages/contact.html">Contact</a>
+            <a href="../../pages/privacy.html">Privacy Policy</a>
+            <a href="../../pages/terms.html">Terms</a>
+        </div>
+
+        <p>© <span id="currentYear"></span> Smart Tools Hub. All rights reserved.</p>
+    </footer>
+
+    <script src="../../assets/js/common.js"></script>
+    <script src="word-counter.js"></script>
+
+</body>
+</html>
